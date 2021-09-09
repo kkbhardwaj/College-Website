@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DPBS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            .slideshow{
+                width:100%;
+                height:500px;
+                float:left;
+            }
+#slideimage{width:100%;
+            height:500px;
+            float:left;
+}
+            .a{background-color: white;
+               text-align:center;
+              color:brown;border: solid red;
+            }
+            
+         body{
+                background-color:skyblue;
+                margin:0;
+                
+            }
+            .menu{
+                width:100%;
+                background-color:#3CB371;
+                overflow: auto;
+            }
+            .menu ul{
+                margin:0;
+                padding:0;
+                list-style: none;
+                line-height:50px;
+                text-align: center;
+                    }
+            .menu li{
+                float: left;
+                     }
+            .menu ul li a{
+                background-color: #142b7;
+                text-decoration: none;
+                width:180px;
+                display: block;
+                color:  #f2f2f2;
+                font-size: 21px;
+                font-family: sans-serif;
+                letter-spacing: 0.5px;}
+             .menu li a:hover{
+                color:red;
+                opacity: 0.6;
+                font-size: 19px;
+               
+            }
+        </style>
+    </head>
+    <body>
+         <body style="background-color:white">
+        
+             <div class="slideshow">
+ <img src="images/01.jpg"  alt="images/01.jpg"   id="slideimage">
+</div>
+        
+<nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Course</a></li>
+                <li><a href="faculty.html">Faculty of BCA</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                
+</ul>
+        </nav>
+            
+            
+           <h1>Faculty of BCA</h1><hr>  
+            <table borde="0" cellpadding="15" cellspacing="5" width="100%" align="center">
+                <tr align="center">
+                    <td><img src="images/uj.jpg"width="410"height="300"><h3>Sir UK Jha <br>(Principle)</h3></td><td><img src="images/dpbs.jpg"width="410"height="300"><h3>DPBS (PG) COLLEGE<br>ANOOPSHAHR</h3></td><td><img src="images/pg.jpg"width="410"height="300"><h3>Sir Pankaj Gupta<br>(HOD)</h3></td></tr>
+             <tr align="center">
+            <td><img src="images/ms.jpg"width="410"height="300"><h3>Sir Mayank Sharma<br>(Assistant Professer)</h3></td><td><img src="images/sg.jpg"width="410"height="300"><h3>Sir Satyaprakesh Gautam<br>(Assistant Professer)</h3></td><td><img src="images/sa.jpg"width="410"height="300"><h3>Sir Sachin Agarwal<br>(Assistant Professer)</h3></td></tr>
+            
+             </table>
+
+           <script>
+var images = ["images/01.jpg","images/02.jpg","images/03.jpg",
+"images/04.jpg",
+"images/05.jpg",
+"images/06.jpg",
+"images/07.jpg",
+"images/08.jpg",
+"images/09.jpg",
+"images/10.jpg",
+"images/11.jpg",
+];
+var i=0;
+function slides(){
+document.getElementById("slideimage").src=images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;}
+setInterval(slides,2000)
+</script>
+
+    </body>
+</html>

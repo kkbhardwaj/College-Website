@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DPBS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            .slideshow{
+                width:100%;
+                height:550px;
+                float:left;
+            }
+#slideimage{width:100%;
+            height:550px;
+            float:left ;
+}
+            
+         body{
+                background-color:skyblue;
+                margin:0;
+                
+            }
+            .menu{
+                width:100%;
+                background-color:#3CB371;
+                overflow: auto;
+            }
+            .menu ul{
+                margin:0;
+                padding:0;
+                list-style: none;
+                line-height:50px;
+                text-align: center;
+                    }
+            .menu li{
+                float: left;
+                     }
+            .menu ul li a{
+                background-color: #142b7;
+                text-decoration: none;
+                width:180px;
+                display: block;
+                color:  #f2f2f2;
+                font-size: 21px;
+                font-family: sans-serif;
+                letter-spacing: 0.5px;}
+             .menu li a:hover{
+                color:red;
+                opacity: 0.6;
+                font-size: 19px;
+               
+            }
+        </style>
+    </head>
+    <body>
+         <body style="background-color:white">
+       <div class="slideshow">
+ <img src="images/volley.jpg"  alt="images/volley.jpg"   id="slideimage">
+</div>
+        
+<nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Course</a></li>
+                <li><a href="faculty.html">Faculty of BCA</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                
+</ul>
+        </nav>
+<h1>Sports in DPBS (PG) COLLEGE</h1><hr>  
+             <h2>Games played in our college</h2>
+             <ul>
+            <li>Indoor Games</li>     
+             <ol>
+                 <li>Chess</li>
+                 <li>Table tennis</li>
+                 <li>Boxing</li>
+                 <li>Billiards</li>
+                 <li>Boxing</li>
+             </ol>
+             <li>Outdoor Games</li>  
+                 <ol>
+                 <li>Volley Ball</li>
+                 <li>Basket Ball</li>
+                 <li>Football</li>
+                 <li>Cricket</li>
+                 <li>Badminton</li>
+             </ol>
+            </ul>
+          
+           <script>
+var images = ["images/volley.jpg",
+
+];
+var i=0;
+function slides(){
+document.getElementById("slideimage").src=images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;}
+setInterval(slides,2000)
+</script>
+
+    </body>
+</html>
